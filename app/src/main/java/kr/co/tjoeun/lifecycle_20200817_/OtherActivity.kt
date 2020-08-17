@@ -2,6 +2,8 @@ package kr.co.tjoeun.lifecycle_20200817_
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+
 
 class OtherActivity : AppCompatActivity() {
 
@@ -10,6 +12,8 @@ class OtherActivity : AppCompatActivity() {
         setContentView(R.layout.activity_other)
         setupEvents()
         setValues()
+
+        Log.d("다른화면", "onCreate 실행됨")
     }
 
     override fun setupEvents() {
